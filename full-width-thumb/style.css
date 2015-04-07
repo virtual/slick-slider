@@ -24,6 +24,8 @@ ul.slickslide li img, .slick-dots button img {
  opacity: 1;
     filter: alpha(opacity=100); /* For IE8 and earlier */
 }
+.slick-dots li:hover { top: 1px; position:relative}
+.slick-dots li.slick-active:hover { top: auto; }
 .slick-dots {
     bottom:0;
     top:auto;
@@ -49,6 +51,7 @@ ul.slickslide li img, .slick-dots button img {
     height:auto;
 }
 .slick-dots li.slick-active {    border:1px solid #ccc;}
+
 .slick-slider .slick-track {
     min-width:100%;
 }
@@ -70,7 +73,6 @@ ul.slickslide li img, .slick-dots button img {
 .slick-dots li button:before {
     content:'';
     display:block;
-    width:100%;
     max-width:150px;
     overflow:hidden;
     float:none;
